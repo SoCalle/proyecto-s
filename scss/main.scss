@@ -1,8 +1,10 @@
 $primary-color:rgb(90,29,88);
 $secondary-color:rgb(224, 136, 75);
 $tertiary-color:rgb(114, 146, 179);
-$primary-text-color:rgb(100,32, 150);
+$primary-text-color:rgb(150, 59, 32);
 $font-stack: 'Playpen Sans', cursive;
+$paragraph-size:1,5em;
+$quaternion-color:rgb(10, 59, 20);
 
 body {
     background-color: rgb(153, 61, 63);
@@ -12,13 +14,18 @@ body {
   }
   nav {
     width: 100%;
-    height: 100px;
+    //height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color:$primary-text-color;
+    padding: 15px;
     p{
         font-size: 1.5;
         padding-left: 30px;
     }
   .icons{
         display: flex;
+        gap: 15px;
         bottom{
             background: none;
             border-style: none;
@@ -35,3 +42,56 @@ body {
     width: 100%;
     height: 250px;
   }/*# sourceMappingURL=main.css.map*/
+article{
+    width: auto;
+
+    color:$primary-tex-color;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    .info-section{
+  
+        display: flex;
+
+        flex-direction: column;
+
+        padding-top: 50px,;
+
+        gap: 25px;  
+      
+    h1{
+       font-size: 3em;
+       padding: 0px;
+       margin: 0px;    
+    }
+    p{
+      font-size: $paragraph-size;
+    }
+    button{
+      width: 12vw;
+      padding: 20px;
+      background-color: $quaternion-color;
+      background: none;
+      border-style: none;
+      border-radius: 35px;
+      color:aqua
+      font-size 1em;
+    }
+    }
+
+    .imagen-section{
+
+        width: 50%;
+
+        background-color: rgb(119, 109, 64);
+        img{
+          width: 100%;
+          border-radius: 19px;
+        }
+
+    }
+
+
+}
